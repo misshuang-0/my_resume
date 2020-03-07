@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瀑布流</title>
+    <!-- 笑脸图标 -->
+    <link rel="icon" href="../img/favicon.ico">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/public.css">
+    <style>
+        .clearFix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #main{
+            width: 1400px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .box{
+            width: 260px;
+            padding: 10px;
+            float: left;
+            transition: transform .4s;
+        }
+        .box:hover{
+            transform: scale(1.1,1.1);
+        }
+        .box img{
+            width: 100%;
+        }
+        nav{
+            width: 1364px;
+            margin: 0 auto;
+            padding-left: 15px;
+            font-size: 15px;
+            background: #4470f6;
+            height: 50px;
+            line-height: 50px;
+            margin-bottom: 10px;
+        }
+        nav p a{
+            color: #fff;
+        }
+        nav p a:hover{
+            color: #e5eafd;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p>
+            <a href="./index.html">
+                回到首页
+            </a>
+        </p>
+    </nav>
+    <div id="main" class="clearFix">
+        <div class="box"><img src="../waterFall-img/01.jpg"></div>
+        <div class="box"><img src="../waterFall-img/02.jpg"></div>
+        <div class="box"><img src="../waterFall-img/03.jpg"></div>
+        <div class="box"><img src="../waterFall-img/04.jpg"></div>
+        <div class="box"><img src="../waterFall-img/05.jpg"></div>
+        <div class="box"><img src="../waterFall-img/06.jpg"></div>
+        <div class="box"><img src="../waterFall-img/07.jpg"></div>
+        <div class="box"><img src="../waterFall-img/08.jpg"></div>
+        <div class="box"><img src="../waterFall-img/09.jpg"></div>
+        <div class="box"><img src="../waterFall-img/11.jpg"></div>
+        <div class="box"><img src="../waterFall-img/12.jpg"></div>
+        <div class="box"><img src="../waterFall-img/13.jpg"></div>
+        <div class="box"><img src="../waterFall-img/14.jpg"></div>
+        <div class="box"><img src="../waterFall-img/15.jpg"></div>
+        <div class="box"><img src="../waterFall-img/16.jpg"></div>
+        <div class="box"><img src="../waterFall-img/17.jpg"></div>
+        <div class="box"><img src="../waterFall-img/18.jpg"></div>
+        <div class="box"><img src="../waterFall-img/19.jpg"></div>
+        <div class="box"><img src="../waterFall-img/20.jpg"></div>
+        <div class="box"><img src="../waterFall-img/21.jpg"></div>
+        <div class="box"><img src="../waterFall-img/22.jpg"></div>
+        <div class="box"><img src="../waterFall-img/23.jpg"></div>
+        <div class="box"><img src="../waterFall-img/24.jpg"></div>
+        <div class="box"><img src="../waterFall-img/25.jpg"></div>
+        <div class="box"><img src="../waterFall-img/26.jpg"></div>
+        <div class="box"><img src="../waterFall-img/27.jpg"></div>
+        <div class="box"><img src="../waterFall-img/28.jpg"></div>
+        <div class="box"><img src="../waterFall-img/29.jpg"></div>
+        <div class="box"><img src="../waterFall-img/30.jpg"></div>
+    </div>
+    
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/waterFall.js"></script>
+</body>
+</html>

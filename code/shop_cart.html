@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <!-- 添加笑脸图标 -->
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/public.css">
+
+    <!-- 0.商城页公共样式 -->
+    <link rel="stylesheet" href="./css/shop.css">
+
+    <!-- 字体图标 -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1632328_3abfu1d5ddc.css">
+
+    <!-- 1.购物车 样式 -->
+    <link rel="stylesheet" href="./css/shop_cart.css">
+    <!-- 2.shop_head 样式（商城首页导航样式） -->
+    <link rel="stylesheet" href="./css/shop_head.css">
+
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header>
+        <div class="innerHead innerContent">
+            <!-- 顶部导航 -->
+            <nav class="clearfix">
+                <div class="shouye">
+                    <a class="ads_tab" href="./shop_center.html">
+                        <i class="iconfont icon-fangzi"></i>
+                        <span>
+                            商城首页
+                        </span>
+                    </a>
+                </div>
+                <div class="address">
+                    <a class="ads_tab" href="javascript:void(0)">
+                        <img src="../img/map.png" alt="">
+                        <span>
+                            湖南
+                        </span>
+                    </a>
+                    <!-- 鼠标滑过‘湖南’显示 -->
+                    <div class="dropdown_box dropdown_ads">
+                        <!-- 省份 -->
+                        <div class="province">
+                            <!-- 所有省份 -->
+                            <div class="allPro clearfix">
+                                <!-- 省份列表 -->
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">北京</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">上海</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">天津</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">重庆</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">河北</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">山西</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">河南</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">辽宁</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">吉林</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">黑龙江</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">内蒙古</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">江苏</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">山东</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">安徽</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">浙江</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">福建</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">湖北</a>
+                                </div>
+                                <div class="pro_item active">
+                                    <a href="javascript:void(0);">湖南</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">广东</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">广西</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">江西</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">四川</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">海南</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">贵州</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">云南</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">西藏</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">陕西</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">甘肃</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">青海</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">宁夏</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">新疆</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">港澳</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">台湾</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">钓鱼岛</a>
+                                </div>
+                                <div class="pro_item">
+                                    <a href="javascript:void(0);">海外</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 特殊地区 -->
+                        <div class="special_ads">
+                            <div class="spacer"></div>
+                            <p class="area_desc">地区专享版本</p>
+                            <p class="special_area">
+                                <a href="javascript:void(0)">中國港澳</a>
+                            </p>
+                        </div>
+                        <!-- 国外站点 -->
+                        <div class="foreign_ads">
+                            <div class="spacer"></div>
+                            <p class="area_desc">Available Sites</p>
+                            <!-- 所有站点地址 -->
+                            <div class="areas">
+                                <!-- 站点列表 -->
+                                <div class="area_item">
+                                    <a href="javascript:void(0)">
+                                        <img src="../img/earth.png" alt="">
+                                        <span>
+                                            Global Site
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="area_item">
+                                    <a href="javascript:void(0)">
+                                        <img src="../img/russia.png" alt="">
+                                        <span>
+                                            Сайт России
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="area_item">
+                                    <a href="javascript:void(0)">
+                                        <img src="../img/Indonesia.jpg" alt="">
+                                        <span>
+                                            Situs Indonesia
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="area_item">
+                                    <a href="javascript:void(0)">
+                                        <img src="../img/Spain.jpg" alt="">
+                                        <span>
+                                            Sitio de España
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="area_item">
+                                    <a href="javascript:void(0)">
+                                        <img src="../img/Thailand.jpg" alt="">
+                                        <span>
+                                            เว็บไซต์ประเทศไทย
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><a class="jdRed" href="./index.html">回到首页</a></li>
+                    <li>
+                        <a class="dropBtn" href="javascript:void(0)">
+                        我的京东
+                        <img src="../img/bottom.png" alt="">
+                        </a>
+                        <div class="dropdown_box dropdown_myJd">
+                            <!-- 我的京东列表1 -->
+                            <div class="myJd_list1 clearfix">
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        待处理订单
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        消息
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        返修退换货
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        我的问答
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        降价商品
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        我的关注
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 我的京东列表2 -->
+                            <div class="myJd_list2 clearfix">
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        我的京豆
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        我的优惠券
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        我的白条
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        我的理财
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0)">京东会员</a></li>
+                    <li>
+                        <a class="jdRed dropBtn" href="javascript:void(0)">企业采购
+                        <img src="../img/bottom.png" alt="">
+                        </a>
+                        <div class="dropdown_box dropdown_myitem">
+                            <!-- 企业采购列表 -->
+                            <div class="myitem_list clearfix">
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        企业购
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        商用场景馆
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        工业品
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        礼品卡
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="userServeP">
+                        <a class="dropBtn" href="javascript:void(0)">客户服务
+                        <img src="../img/bottom.png" alt="">
+                        </a>
+                        <div class="dropdown_box dropdown_myitem">
+                            <!-- 客户服务列表 -->
+                            <div class="myitem_list clearfix">
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        企业购
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        商用场景馆
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        工业品
+                                    </a>
+                                </div>
+                                <div class="list1_item">
+                                    <a href="javascript:void(0)">
+                                        礼品卡
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="webNav">
+                        <a class="dropBtn" href="javascript:void(0)">
+                        网站导航
+                        <img src="../img/bottom.png" alt="">
+                        </a>
+                        <div class="dropdown_box dropdown_webNav clearfix">
+                            <!-- 网站导航列表1——特色主题 -->
+                            <div class="webNav_list webNav_list1">
+                                <h3>特色主题</h3>
+                                <div class="allitems">
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 网站导航列表1——行业频道 -->
+                            <div class="webNav_list webNav_list2">
+                                <h3>特色主题</h3>
+                                <div class="allitems">
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 网站导航列表1——生活服务 -->
+                            <div class="webNav_list webNav_list3">
+                                <h3>特色主题</h3>
+                                <div class="allitems">
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 网站导航列表1——更多精选 -->
+                            <div class="webNav_list webNav_list4">
+                                <h3>特色主题</h3>
+                                <div class="allitems">
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                    <div class="webNav_item">
+                                        <a href="javascript:void(0)">新品首发</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="phoneJd">
+                        <span>
+                        手机京东
+                        </span>
+                        <div class="dropdown_box dropdown_phone">
+                            <div class="phoneCode code1 clearfix">
+                                <img class="code_img" src="../img/code1.webp" alt="">
+                                <div class="code_desc">
+                                    <p class="phone_title"><a href="javascript:void(0)">
+                                        手机京东
+                                    </a></p>
+                                    <p class="gifts">新人专享大礼包</p>
+                                    <div class="icons">
+                                        <a href="javascript:void(0)">
+                                            <img src="../img/iphone2.png" alt="">
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="../img/andriod2.png" alt="">
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="../img/ipad.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phoneCode code2 clearfix">
+                                <img class="code_img" src="../img/code2.webp" alt="">
+                                <div class="code_desc">
+                                    <p class="phone_title"><a href="javascript:void(0)">
+                                        关注京东微信
+                                    </a></p>
+                                    <p class="gifts">微信扫一扫关注京东服务号订阅更多促销优惠福利</p>
+                                </div>
+                            </div>
+                            <div class="phoneCode code3 clearfix">
+                                <img class="code_img" src="../img/code3.webp" alt="">
+                                <div class="code_desc">
+                                    <p class="phone_title"><a href="javascript:void(0)">
+                                        京东金融客户端
+                                    </a></p>
+                                    <p class="gifts">新人专享大礼包</p>
+                                    <div class="icons">
+                                        <a href="javascript:void(0)">
+                                            <img src="../img/iphone2.png" alt="">
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="../img/andriod2.png" alt="">
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <img src="../img/ipad.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 购物车主体内容 -->
+    <div class="container white_bg">
+        <div class="innerContent">
+            <!-- 搜索栏 -->
+            <div class="search_box clearfix">
+                <div class="text">
+                    以下属于测试内容
+                </div>
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="请输入您要搜索的关键词">
+                        <button type="button">搜索</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- cart_main -->
+            <div class="cart">
+                <!-- cart 头部 -->
+                <div class="cart_head clearfix">
+                    <div class="column checkbox">
+                        <div class="check_all">
+                            <input class="select_all_box" type="checkbox" name="" id="">
+                        </div>
+                        全选
+                    </div>
+                    <div class="column goods">商品</div>
+                    <div class="column price">单价</div>
+                    <div class="column quantity">数量</div>
+                    <div class="column sum">小计</div>
+                    <div class="column action">操作</div>
+                </div>
+                <!-- cart 列表 -->
+                <div id="cart_list" class="cart_list">
+
+                    <!-- 单个店铺 -->
+                    <div class="cart_item">
+                        <!-- 店铺名 -->
+                        <div class="shop_name">
+                            <!-- 店铺 全选 -->
+                            <div class="shop_checkbox">
+                                <input class="select_item_all" type="checkbox" name="" id="">
+                            </div>
+                            <span class="shop_txt">
+                                <a href="javascript:void(0)">
+                                    依然美化妆品专营店
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <i class="iconfont icon-kefu"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <!-- 店铺 列表项 -->
+                        <div class="item_list">
+                            <div class="item_list_item">
+                                <div class="item_form clearfix">
+                                    <div class="cell checkbox">
+                                        <input class="select_item_box" type="checkbox" name="" id="">
+                                    </div>
+                                    <div class="cell goods">
+                                        <div class="img">
+                                            <img src="../img/cart_img1.jpg" alt="">
+                                        </div>
+                                        <div class="msg">
+                                            <div class="p_name">
+                                                <a href="javascript:void(0)">
+                                                    黛莱美（DaiLaiMei） 
+                                                    思埠黛莱美无瑕水光气垫CC霜遮瑕底妆护肤裸妆保湿贴肤细腻轻透
+                                                </a>
+                                            </div>
+                                            <div class="btn">
+                                                <div class="img">
+                                                    <img src="../img/set.png" alt="">
+                                                </div>
+                                                <a href="javascript:void(0)">
+                                                    选服务
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell price">
+                                        <p>¥<span>156.00</span></p>
+                                        <p>
+                                            <span>白条6期免息</span>
+                                        </p>
+                                    </div>
+                                    <div class="cell quantity">
+                                        <div class="form clearfix">
+                                            <a class="reduce" href="javascript:void(0)">-</a>
+                                            <input class="godds_num" type="text" min="1" value="1" name="" id="">
+                                            <a class="add" href="javascript:void(0)">+</a>
+                                        </div>
+                                        <div class="txt">有货</div>
+                                    </div>
+                                    <div class="cell sum">¥<span>156.00</span></div>
+                                    <div class="cell action">
+                                        <a class="delete_shop" href="javascript:void(0)">
+                                            删除
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_list_item">
+                                <div class="item_form clearfix">
+                                    <div class="cell checkbox">
+                                        <input class="select_item_box" type="checkbox" name="" id="">
+                                    </div>
+                                    <div class="cell goods">
+                                        <div class="img">
+                                            <img src="../img/cart_img8.png" alt="">
+                                        </div>
+                                        <div class="msg">
+                                            <div class="p_name">
+                                                <a href="javascript:void(0)">
+                                                    TST庭秘密冰肌如玉活酵母苹果肌黄金面膜系列活动组合套装礼盒补水保湿
+                                                </a>
+                                            </div>
+                                            <div class="btn">
+                                                <div class="img">
+                                                    <img src="../img/set.png" alt="">
+                                                </div>
+                                                <a href="javascript:void(0)">
+                                                    选服务
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell price">
+                                        <p>¥<span>351.00</span></p>
+                                        <p>
+                                            <span>白条6期免息</span>
+                                        </p>
+                                    </div>
+                                    <div class="cell quantity">
+                                        <div class="form clearfix">
+                                            <a class="reduce" href="javascript:void(0)">-</a>
+                                            <input class="godds_num" type="text" min="1" value="1" name="" id="">
+                                            <a class="add" href="javascript:void(0)">+</a>
+                                        </div>
+                                        <div class="txt">有货</div>
+                                    </div>
+                                    <div class="cell sum">¥<span>351.00</span></div>
+                                    <div class="cell action">
+                                        <a class="delete_shop" href="javascript:void(0)">
+                                            删除
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 单个店铺 -->
+                    <div class="cart_item">
+                        <!-- 店铺名 -->
+                        <div class="shop_name">
+                            <!-- 店铺 全选 -->
+                            <div class="shop_checkbox">
+                                <input class="select_item_all" type="checkbox" name="" id="">
+                            </div>
+                            <span class="shop_txt">
+                                <a href="javascript:void(0)">
+                                    鸭鸭服饰女装旗舰店
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <i class="iconfont icon-kefu"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <!-- 店铺 列表项 -->
+                        <div class="item_list">
+                            <div class="item_list_item">
+                                <div class="item_form clearfix">
+                                    <div class="cell checkbox">
+                                        <input class="select_item_box" type="checkbox" name="" id="">
+                                    </div>
+                                    <div class="cell goods">
+                                        <div class="img">
+                                            <img src="../img/cart_img2.jpg" alt="">
+                                        </div>
+                                        <div class="msg">
+                                            <div class="p_name">
+                                                <a href="javascript:void(0)">
+                                                    YAYA鸭鸭服饰羽绒外套女2019新款冬装宽松白鸭绒大衣中长款连帽羽绒服女时尚派克服面包服加厚款
+                                                    粉色 S【建议95-115斤】
+                                                </a>
+                                            </div>
+                                            <div class="btn">
+                                                <div class="img">
+                                                    <img src="../img/set.png" alt="">
+                                                </div>
+                                                <a href="javascript:void(0)">
+                                                    选服务
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell price">
+                                        <p>¥<span>598.00</span></p>
+                                        <p>
+                                            <span>白条6期免息</span>
+                                        </p>
+                                    </div>
+                                    <div class="cell quantity">
+                                        <div class="form clearfix">
+                                            <a class="reduce" href="javascript:void(0)">-</a>
+                                            <input class="godds_num" type="text" min="1" value="1" name="" id="">
+                                            <a class="add" href="javascript:void(0)">+</a>
+                                        </div>
+                                        <div class="txt">有货</div>
+                                    </div>
+                                    <div class="cell sum">¥<span>598.00</span></div>
+                                    <div class="cell action">
+                                        <a class="delete_shop" href="javascript:void(0)">
+                                            删除
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 单个店铺 -->
+                    <div class="cart_item">
+                        <!-- 店铺名 -->
+                        <div class="shop_name">
+                            <!-- 店铺 全选 -->
+                            <div class="shop_checkbox">
+                                <input class="select_item_all" type="checkbox" name="" id="">
+                            </div>
+                            <span class="shop_txt">
+                                <a href="javascript:void(0)">
+                                    忻思忆官方旗舰店
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <i class="iconfont icon-kefu"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <!-- 店铺列表项 -->
+                        <div class="item_list">
+                            <div class="item_list_item">
+                                <div class="item_form clearfix">
+                                    <div class="cell checkbox">
+                                        <input class="select_item_box" type="checkbox" name="" id="">
+                                    </div>
+                                    <div class="cell goods">
+                                        <div class="img">
+                                            <img src="../img/cart_img3.jpg" alt="">
+                                        </div>
+                                        <div class="msg">
+                                            <div class="p_name">
+                                                <a href="javascript:void(0)">
+                                                    忻思忆女装连衣裙显瘦小黑裙2020新款减龄收腰A字裙复古印花丝绒时尚性
+                                                </a>
+                                            </div>
+                                            <div class="btn">
+                                                <div class="img">
+                                                    <img src="../img/set.png" alt="">
+                                                </div>
+                                                <a href="javascript:void(0)">
+                                                    选服务
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell price">
+                                        <p>¥<span>118.00</span></p>
+                                        <p>
+                                            <span>白条6期免息</span>
+                                        </p>
+                                    </div>
+                                    <div class="cell quantity">
+                                        <div class="form clearfix">
+                                            <a class="reduce" href="javascript:void(0)">-</a>
+                                            <input class="godds_num" type="text" min="1" value="1" name="" id="">
+                                            <a class="add" href="javascript:void(0)">+</a>
+                                        </div>
+                                        <div class="txt">有货</div>
+                                    </div>
+                                    <div class="cell sum">¥<span>118.00</span></div>
+                                    <div class="cell action">
+                                        <a class="delete_shop" href="javascript:void(0)">
+                                            删除
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_list_item">
+                                <div class="item_form clearfix">
+                                    <div class="cell checkbox">
+                                        <input class="select_item_box" type="checkbox" name="" id="">
+                                    </div>
+                                    <div class="cell goods">
+                                        <div class="img">
+                                            <img src="../img/cart_img9.jpg" alt="">
+                                        </div>
+                                        <div class="msg">
+                                            <div class="p_name">
+                                                <a href="javascript:void(0)">
+                                                    茵曼2019秋装新款时尚中高腰配腰带侧边撞色潮流宽松阔腿牛仔裤女
+                                                </a>
+                                            </div>
+                                            <div class="btn">
+                                                <div class="img">
+                                                    <img src="../img/set.png" alt="">
+                                                </div>
+                                                <a href="javascript:void(0)">
+                                                    选服务
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell price">
+                                        <p>¥<span>259.00</span></p>
+                                        <p>
+                                            <span>白条6期免息</span>
+                                        </p>
+                                    </div>
+                                    <div class="cell quantity">
+                                        <div class="form clearfix">
+                                            <a class="reduce" href="javascript:void(0)">-</a>
+                                            <input class="godds_num" type="text" min="1" value="1" name="" id="">
+                                            <a class="add" href="javascript:void(0)">+</a>
+                                        </div>
+                                        <div class="txt">有货</div>
+                                    </div>
+                                    <div class="cell sum">¥<span>259.00</span></div>
+                                    <div class="cell action">
+                                        <a class="delete_shop" href="javascript:void(0)">
+                                            删除
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <!-- 店铺名 -->
+                        <div class="shop_name">
+                            <!-- 店铺全选 -->
+                            <div class="shop_checkbox">
+                                <input class="select_item_all" type="checkbox" name="" id="">
+                            </div>
+                            <span class="shop_txt">
+                                <a href="javascript:void(0)">
+                                    幸运叶子官方旗舰店
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <i class="iconfont icon-kefu"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <!-- 店铺列表项 -->
+                        <div class="item_list">
+                            <div class="item_list_item">
+                                <div class="item_form clearfix">
+                                    <div class="cell checkbox">
+                                        <input class="select_item_box" type="checkbox" name="" id="">
+                                    </div>
+                                    <div class="cell goods">
+                                        <div class="img">
+                                            <img src="../img/cart_img4.jpg" alt="">
+                                        </div>
+                                        <div class="msg">
+                                            <div class="p_name">
+                                                <a href="javascript:void(0)">
+                                                    NIKE耐克男鞋 2020春季新款AJ4兄弟运动鞋air max气垫缓震外场实战篮球
+                                                </a>
+                                            </div>
+                                            <div class="btn">
+                                                <div class="img">
+                                                    <img src="../img/set.png" alt="">
+                                                </div>
+                                                <a href="javascript:void(0)">
+                                                    选服务
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell price">
+                                        <p>¥<span>599.00</span></p>
+                                        <p>
+                                            <span>白条6期免息</span>
+                                        </p>
+                                    </div>
+                                    <div class="cell quantity">
+                                        <div class="form clearfix">
+                                            <a class="reduce" href="javascript:void(0)">-</a>
+                                            <input class="godds_num" type="text" min="1" value="1" name="" id="">
+                                            <a class="add" href="javascript:void(0)">+</a>
+                                        </div>
+                                        <div class="txt">有货</div>
+                                    </div>
+                                    <div class="cell sum">¥<span>599.00</span></div>
+                                    <div class="cell action">
+                                        <a class="delete_shop" href="javascript:void(0)">
+                                            删除
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 单个店铺 -->
+                    <div class="cart_item">
+                        <!-- 店铺名 -->
+                        <div class="shop_name">
+                            <!-- 店铺全选 -->
+                            <div class="shop_checkbox">
+                                <input class="select_item_all" type="checkbox" name="" id="">
+                            </div>
+                            <span class="shop_txt">
+                                <a href="javascript:void(0)">
+                                    茵曼官方旗舰店
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <i class="iconfont icon-kefu"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <!-- 店铺列表项 -->
+                        <div class="item_list">
+                            <div class="item_list_item">
+                                <div class="item_form clearfix">
+                                    <div class="cell checkbox">
+                                        <input class="select_item_box" type="checkbox" name="" id="">
+                                    </div>
+                                    <div class="cell goods">
+                                        <div class="img">
+                                            <img src="../img/cart_img5.jpg" alt="">
+                                        </div>
+                                        <div class="msg">
+                                            <div class="p_name">
+                                                <a href="javascript:void(0)">
+                                                    茵曼夏装新款文艺范绣花棉麻短袖衬衫女亚麻白衬衣【1882013730】 珍珠白
+                                                </a>
+                                            </div>
+                                            <div class="btn">
+                                                <div class="img">
+                                                    <img src="../img/set.png" alt="">
+                                                </div>
+                                                <a href="javascript:void(0)">
+                                                    选服务
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell price">
+                                        <p>¥<span>159.00</span></p>
+                                        <p>
+                                            <span>白条6期免息</span>
+                                        </p>
+                                    </div>
+                                    <div class="cell quantity">
+                                        <div class="form clearfix">
+                                            <a class="reduce" href="javascript:void(0)">-</a>
+                                            <input class="godds_num" type="text" min="1" value="1" name="" id="">
+                                            <a class="add" href="javascript:void(0)">+</a>
+                                        </div>
+                                        <div class="txt">有货</div>
+                                    </div>
+                                    <div class="cell sum">¥<span>159.00</span></div>
+                                    <div class="cell action">
+                                        <a class="delete_shop" href="javascript:void(0)">
+                                            删除
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 单个店铺 -->
+                    <div class="cart_item">
+                        <!-- 店铺名 -->
+                        <div class="shop_name">
+                            <!-- 店铺全选 -->
+                            <div class="shop_checkbox">
+                                <input class="select_item_all" type="checkbox" name="" id="">
+                            </div>
+                            <span class="shop_txt">
+                                <a href="javascript:void(0)">
+                                    依然美化妆品专营店
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <i class="iconfont icon-kefu"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <!-- 店铺列表项 -->
+                        <div class="item_list">
+                            <div class="item_list_item">
+                                <div class="item_form clearfix">
+                                    <div class="cell checkbox">
+                                        <input class="select_item_box" type="checkbox" name="" id="">
+                                    </div>
+                                    <div class="cell goods">
+                                        <div class="img">
+                                            <img src="../img/cart_img6.jpg" alt="">
+                                        </div>
+                                        <div class="msg">
+                                            <div class="p_name">
+                                                <a href="javascript:void(0)">
+                                                    黛莱美（DaiLaiMei） 
+                                                    思埠黛莱美无瑕水光气垫CC霜遮瑕底妆护肤裸妆保湿贴肤细腻轻透
+                                                </a>
+                                            </div>
+                                            <div class="btn">
+                                                <div class="img">
+                                                    <img src="../img/set.png" alt="">
+                                                </div>
+                                                <a href="javascript:void(0)">
+                                                    选服务
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell price">
+                                        <p>¥<span>156.00</span></p>
+                                        <p>
+                                            <span>白条6期免息</span>
+                                        </p>
+                                    </div>
+                                    <div class="cell quantity">
+                                        <div class="form clearfix">
+                                            <a class="reduce" href="javascript:void(0)">-</a>
+                                            <input class="godds_num" type="text" min="1" value="1" name="" id="">
+                                            <a class="add" href="javascript:void(0)">+</a>
+                                        </div>
+                                        <div class="txt">有货</div>
+                                    </div>
+                                    <div class="cell sum">¥<span>156.00</span></div>
+                                    <div class="cell action">
+                                        <a class="delete_shop" href="javascript:void(0)">
+                                            删除
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 单个店铺 -->
+                    <div class="cart_item">
+                        <!-- 店铺名 -->
+                        <div class="shop_name">
+                            <!-- 店铺全选 -->
+                            <div class="shop_checkbox">
+                                <input class="select_item_all" type="checkbox" name="" id="">
+                            </div>
+                            <span class="shop_txt">
+                                <a href="javascript:void(0)">
+                                    三彩女装旗舰店
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <i class="iconfont icon-kefu"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <!-- 店铺列表项 -->
+                        <div class="item_list">
+                            <div class="item_list_item">
+                                <div class="item_form clearfix">
+                                    <div class="cell checkbox">
+                                        <input class="select_item_box" type="checkbox" name="" id="">
+                                    </div>
+                                    <div class="cell goods">
+                                        <div class="img">
+                                            <img src="../img/cart_img7.jpg" alt="">
+                                        </div>
+                                        <div class="msg">
+                                            <div class="p_name">
+                                                <a href="javascript:void(0)">
+                                                    三彩2019夏季新款 V领纯色条纹A字裙短袖针织裙毛衫裙连衣裙女 浅咖啡
+                                                </a>
+                                            </div>
+                                            <div class="btn">
+                                                <div class="img">
+                                                    <img src="../img/set.png" alt="">
+                                                </div>
+                                                <a href="javascript:void(0)">
+                                                    选服务
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cell price">
+                                        <p>¥<span>128.00</span></p>
+                                        <p>
+                                            <span>白条6期免息</span>
+                                        </p>
+                                    </div>
+                                    <div class="cell quantity">
+                                        <div class="form clearfix">
+                                            <a class="reduce" href="javascript:void(0)">-</a>
+                                            <input class="godds_num" type="text" min="1" value="1" name="" id="">
+                                            <a class="add" href="javascript:void(0)">+</a>
+                                        </div>
+                                        <div class="txt">有货</div>
+                                    </div>
+                                    <div class="cell sum">¥<span>128.00</span></div>
+                                    <div class="cell action">
+                                        <a class="delete_shop" href="javascript:void(0)">
+                                            删除
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部结算 -->
+        <div id="bottom_sum" class="bottom_sum fixed">
+            <div class="innerContent clearfix">
+                <div class="select_all floatL">
+                    <div class="checkbox">
+                        <input class="select_all_box" type="checkbox" name="" id="">
+                        全选
+                    </div>
+                </div>
+                <div class="action floatL">
+                    <a id="delete_select" href="javascript:void(0)">
+                        删除选中商品
+                    </a>
+                    <a id="delete_all" href="javascript:void(0)">
+                        清空购物车
+                    </a>
+                </div>
+                <div class="sum_right floatR">
+                    <div class="btn floatR">
+                        <a href="javascript:void(0)">
+                            去结算
+                        </a>
+                    </div>
+                    <div id="total_sum" class="price floatR">
+                        <span>总价:</span>
+                        <span class="total">¥<span>0.00</span></span>
+                    </div>
+                    <div id="choosed_shops" class="amount floatR">
+                        已选择 <em>0</em> 件商品
+                        <img src="../img/top.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 购物车为空，显示 -->
+        <div class="cart_empty">
+            <div class="innerContent clearfix">
+                <div class="img">
+                    <img src="../img/cart_car.png" alt="">
+                </div>
+                <div class="text">
+                    <p>购物车空空的哦~，去看看心仪的商品吧~</p>
+                    <a href="shop_center.html">去购物></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 底部 -->
+        <iframe class="footer" src="./shop_bottom.html" frameborder="0" scrolling='no'></iframe>
+
+        
+    </div>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/shop_cart.js"></script>
+</body>
+</html>
